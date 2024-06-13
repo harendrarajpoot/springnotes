@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+
+
+<bean id="emp" class="com.spring.Employee">
+<!-- set the value using setter method -->
+
+<!-- <property name="empid" value="101"></property>
+<property name="fname" value="Radhey"></property>
+<property name="lname" value="Krishan"></property>
+<property name="mobile" value="89999999"></property>
+<property name="email" value="radhakrishan@gmail.com"></property> -->
+
+
+<!--  Set the value using constructor  -->
+
+<constructor-arg value="101"/>
+<constructor-arg value="Radhey"/> 
+<constructor-arg value="Krishan"/> 
+<constructor-arg value="89999999"/> 
+<constructor-arg value="radhakrishan@gmail.com"/> 
+
+
+
+
+</bean>
+</beans>  
