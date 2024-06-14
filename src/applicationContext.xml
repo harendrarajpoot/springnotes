@@ -24,9 +24,19 @@
 <constructor-arg value="Krishan"/> 
 <constructor-arg value="89999999"/> 
 <constructor-arg value="radhakrishan@gmail.com"/> 
+<constructor-arg><ref bean="address"></ref></constructor-arg>
+
+</bean>
+
+<bean id="address" class="com.spring.Address">
 
 
-
-
+<constructor-arg value="100" type="int"/>
+<constructor-arg value="Dastuk Nagar"></constructor-arg>
+<constructor-arg value="Midc"></constructor-arg>
+<constructor-arg value="44406" type="int"></constructor-arg>
+<constructor-arg value="MH"></constructor-arg>
+<constructor-arg value="AMararavti"></constructor-arg>
+<constructor-arg value="IND"></constructor-arg>
 </bean>
 </beans>  

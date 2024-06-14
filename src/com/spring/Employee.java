@@ -1,5 +1,6 @@
 package com.spring;
 
+import java.util.List;
 
 // bean class enitity class pojo(plain java object) class
 public class Employee {
@@ -12,22 +13,39 @@ public class Employee {
 	private String lname;
 	private String mobile;
 	private String email;
+	private Address adress;
+	
 	// if you have create parameterized constructor then we should create defalut constructor bcoz JVM will not provide default Constructor
 	
 	
+	
+	
+
 	public Employee() {
 		// TODO Auto-generated constructor stub
 	}
 	
 	
-	public Employee(int empid, String fname, String lname, String mobile, String email) {
+	public Address getAdress() {
+		return adress;
+	}
+
+
+	public void setAdress(Address adress) {
+		this.adress = adress;
+	}
+
+
+	public Employee(int empid, String fname, String lname, String mobile, String email,Address address) {
 		super();
 		this.empid = empid;
 		this.fname = fname;
 		this.lname = lname;
 		this.mobile = mobile;
 		this.email = email;
+		this.adress=address;
 	}
+	
 	
 	public int getEmpid() {
 		return empid;

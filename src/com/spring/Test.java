@@ -1,5 +1,10 @@
 package com.spring;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -34,12 +39,29 @@ public class Test {
 				
 				
 		
-		/*Employee emp1=new Employee(101, "Bam Bam", "Bhole", "00000000", "bambambhole@gmail.com");
-		Employee  radha =new Employee(101, "Radhey", "Radhey", "000000001", "shreeradhey@gmail.com");
+		//Employee emp=new Employee(101, "Bam Bam", "Bhole", "00000000", "bambambhole@gmail.com");
+		/*Employee  radha =new Employee(101, "Radhey", "Radhey", "000000001", "shreeradhey@gmail.com");
 		Employee krishan=new Employee(101, "Jay Shree ", "Krishna", "000000002", "shreekrishan@gmail.com");
 		Employee waheguru=new Employee(101, "wahe", "guru", "000000001", "wahegur@gmail.com");
-		
 		*/
+		
+		/*Address address=new Address();
+		address.setHouseNo(101111);
+		address.setLandmark("MIDC");
+		address.setState("MH");
+		address.setCountry("IND");
+		address.setStreet("dastuk nagar");
+		address.setDistrict("Amaravati");
+		address.setPincode(44406);
+		
+		
+		emp.setAdress(address);
+		*/
+		
+		
+		
+		
+		
 		
 		
 		System.out.println(emp.getEmpid());
@@ -47,6 +69,14 @@ public class Test {
 		System.out.println(emp.getLname());
 		System.out.println(emp.getMobile());
 		System.out.println(emp.getEmail());
+		System.out.println("Adressssssssssssss");
+		System.out.println(emp.getAdress().getCountry());
+		System.out.println(emp.getAdress().getDistrict());
+		System.out.println(emp.getAdress().getLandmark());
+		System.out.println(emp.getAdress().getPincode());
+		System.out.println(emp.getAdress().getHouseNo());
+		System.out.println(emp.getAdress().getState());
+		System.out.println(emp.getAdress().getStreet());
 		
 		
 		
