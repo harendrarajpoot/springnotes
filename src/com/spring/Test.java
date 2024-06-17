@@ -11,6 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 
 	public static void main(String[] args) {
+	
 		// TODO Auto-generated method stub
 
 		// ya to akele baithaa karo nhi to unko bolo pdte time distrub mt kiya kro
@@ -59,11 +60,7 @@ public class Test {
 		*/
 		
 		
-		
-		
-		
-		
-		
+			
 		System.out.println(emp.getEmpid());
 		System.out.println(emp.getFname());
 		System.out.println(emp.getLname());
